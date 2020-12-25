@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgivePwdActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change"
+        android:textSize="25sp"
+        android:layout_marginTop="45dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/usename_tel"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/forgive_tel_one"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_backgroup"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_pwd"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/forgive_pwd_one"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_backgroup"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/queren"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/forgive_pwd_two"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_backgroup"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgive_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/ok"
+        android:textSize="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">酷欧天气</string>
+    <string name="usename_tel">登录账号：</string>
+    <string name="queren">确认密码：</string>
+    <string name="new_pwd">新密码：</string>
+    <string name="change">修改密码</string>
+    <string name="ok">确认</string>
+</resources>

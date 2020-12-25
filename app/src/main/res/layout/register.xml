@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true" >
+    <RelativeLayout
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+            <!-- android:inputType="number" -->
+            <EditText
+                android:id="@+id/register_name_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" >
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:text="昵称:"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:visibility="visible" />
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/email_delete_pressed"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/register_tell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="75dp" >
+            <!-- android:inputType="number" -->
+            <EditText
+                android:id="@+id/register_tell_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:maxLength="20"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="电话:"
+                android:textSize="18sp"/>
+
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/email_delete_pressed"
+                android:visibility="invisible" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/register_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_tell"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/register_password_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" >
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="10dp"
+                android:text="密码:"
+                android:textSize="18sp" />
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/password_close" />
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="45dp"
+                android:background="@drawable/email_delete_pressed"
+                android:visibility="invisible"
+                tools:ignore="RtlHardcoded" />
+        </FrameLayout>
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/register_password"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_selector"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>
